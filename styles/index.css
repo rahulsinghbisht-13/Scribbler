@@ -1,7 +1,11 @@
+/* gave the background an image and defined its attributes */
 body {
     display: flex;
+    background: url("../images/background.jpg") center/cover no-repeat;
+    height: 100vh;
 }
 
+/* defined flexbox in header container */
 #header {
     display: flex;
     flex-direction: row;

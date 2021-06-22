@@ -1,2 +1,2 @@
 # Scribbler
-A blogging frontend website project by UpGrad.
+A frontend blogging website project by UpGrad.

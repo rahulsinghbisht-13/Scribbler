@@ -1,0 +1,19 @@
+body {
+    display: flex;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#logo, #tagline{
+    font-family: Satisfy, cursive;
+}
+
+#logo {
+    color: blue;
+}

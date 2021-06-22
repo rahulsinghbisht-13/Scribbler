@@ -24,7 +24,37 @@
         </div>
         <div class="buttons">
             <button type="button" class="btn btn-primary" id="signin">Sign In</button>
-            <button type="button" class="btn btn-primary" id="signup">Sign Up</button>
+            <button type="button" class="btn btn-primary" id="signup" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign Up</button>
+            
+            <!-- Modal  added to signup button -->
+            <div class="modal fade" id="staticBackdrop"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Get Started</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form class="signupform">
+                                    <label for="fullname" class="name">Full Name</label>
+                                    <input type="text" name="fullname" id="fullname" placeholder="Enter Full Name">
+                        
+                                    <label for="username" class="name">Username</label>
+                                    <input type="text" name="username" id="username" placeholder="Enter Username">
+                        
+                                    <label for="password" class="password">Password</label>
+                                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                        
+                                    <label for="cfmpassword">Confirm Password</label>
+                                    <input type="password" name="cfmpassword" id="cfmpassword" placeholder="Confirm Password">                        
+                                </form>
+                                <button class="btn btn-success">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 

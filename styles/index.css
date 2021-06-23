@@ -104,6 +104,14 @@ body {
 
 /* styling the sign in form */
 
+.modal-dialog {
+    display: flex;
+    height: 90vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .signinform {
     display: flex;
     flex-direction: column;
@@ -119,7 +127,7 @@ body {
 }
 
 .signinform .btn {
-    margin-top: 3%;
+    margin-top: 4.5%;
     font-size: 1em;
     padding: 13px 0;
 }
@@ -135,4 +143,18 @@ body {
         padding-left: 30%;
         padding-right: 10%;
     }
+}
+
+/* styling the footer of signin modal */
+
+#openSignupModal {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 7%;
+}
+
+#openSignupModalSpan {
+    color: blue;
+    cursor: pointer;
 }

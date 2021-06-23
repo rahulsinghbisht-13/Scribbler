@@ -36,20 +36,21 @@
                         </div>
                         <div class="modal-body">
                             <div class="container">
-                                <form class="signupform">
-                                    <label for="fullname" class="name">Full Name</label>
-                                    <input type="text" name="fullname" id="fullname" placeholder="Enter Full Name">
+                                <form class="signupform" action="#kncs">
+                                    <label for="fullname" class="label">Full Name</label>
+                                    <input type="text" name="fullname" id="fullname" placeholder="Enter Full Name" required>
                         
-                                    <label for="username" class="name">Username</label>
-                                    <input type="text" name="username" id="username" placeholder="Enter Username">
+                                    <label for="username" class="label">Username</label>
+                                    <input type="text" name="username" id="username" placeholder="Enter Username" required>
                         
-                                    <label for="password" class="password">Password</label>
-                                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                                    <label for="password" class="label">Password</label>
+                                    <input type="password" name="password" id="password" placeholder="Enter Password" required>
                         
-                                    <label for="cfmpassword">Confirm Password</label>
-                                    <input type="password" name="cfmpassword" id="cfmpassword" placeholder="Confirm Password">                        
+                                    <label for="cfmpassword" class="label">Confirm Password</label>
+                                    <input type="password" name="cfmpassword" id="cfmpassword" placeholder="Confirm Password" required>
+                                    
+                                    <button class="btn btn-success">Sign Up</button>
                                 </form>
-                                <button class="btn btn-success">Sign Up</button>
                             </div>
                         </div>
                     </div>

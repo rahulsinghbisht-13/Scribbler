@@ -101,3 +101,38 @@ body {
     font-size: 1em;
     padding: 13px 0;
 }
+
+/* styling the sign in form */
+
+.signinform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signinform input {
+    margin-bottom: 10px;
+    padding: 2.5%;
+    margin-top: 5px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+.signinform .btn {
+    margin-top: 3%;
+    font-size: 1em;
+    padding: 13px 0;
+}
+
+#staticBackdropLabel1 {
+    padding-left: 27%;
+    font-size: 2em;
+}
+
+/* media query for signup title */
+@media(max-width: 500px){
+    #staticBackdropLabel1 {
+        padding-left: 30%;
+        padding-right: 10%;
+    }
+}

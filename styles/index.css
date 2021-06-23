@@ -46,3 +46,9 @@ body {
         padding-right: 10%;
     }
 }
+
+@media(max-width: 380px){
+    #signup, #signin {
+        margin-left: 40px;
+    }
+}

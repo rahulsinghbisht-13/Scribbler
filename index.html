@@ -45,7 +45,10 @@
                                     <input type="password" name="password" id="password" placeholder="Enter Password" required>
     
                                     <button class="btn btn-success">Sign In</button>
-                                    <p>Not a member? <span onclick="signup()">Sign Up</span></p>
+
+                                    <!-- snippet to open another modal -->
+                                    <p id="openSignupModal"> Not a member? <span id="openSignupModalSpan" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-dismiss="modal">Sign Up</span></p>
+
                                 </form>
                             </div>
                         </div>

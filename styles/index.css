@@ -21,10 +21,28 @@ body {
     font-size: 3em;
 }
 
+/* aligned the post buttons */
 #main {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 120px;
     font-weight: bold;
+}
+
+#all_posts, #create_post {
+    font-weight: bold;
+}
+
+#staticBackdropLabel {
+    padding-left: 35%;
+    font-size: 2em;
+}
+
+/* media query for signup title */
+@media(max-width: 500px){
+    #staticBackdropLabel {
+        padding-left: 30%;
+        padding-right: 10%;
+    }
 }

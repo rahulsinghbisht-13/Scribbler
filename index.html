@@ -23,7 +23,36 @@
             <p id="tagline">Explore. Imagine. Create</p>
         </div>
         <div class="buttons">
-            <button type="button" class="btn btn-primary" id="signin">Sign In</button>
+            <!-- Sign In button -->
+            <button type="button" class="btn btn-primary" id="signin" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign In</button>
+
+            <!-- Modal  added to signup button -->
+            <div class="modal fade" id="staticBackdrop"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel1">Welcome Back!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form class="signinform" action="#kncs">
+                                    
+                                    <label for="username" class="label">Username</label>
+                                    <input type="text" name="username" id="username" placeholder="Enter Username" required>
+                        
+                                    <label for="password" class="label">Password</label>
+                                    <input type="password" name="password" id="password" placeholder="Enter Password" required>
+    
+                                    <button class="btn btn-success">Sign In</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sign Up button -->
             <button type="button" class="btn btn-primary" id="signup" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign Up</button>
             
             <!-- Modal  added to signup button -->
@@ -48,7 +77,7 @@
                         
                                     <label for="cfmpassword" class="label">Confirm Password</label>
                                     <input type="password" name="cfmpassword" id="cfmpassword" placeholder="Confirm Password" required>
-                                    
+
                                     <button class="btn btn-success">Sign Up</button>
                                 </form>
                             </div>

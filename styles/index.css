@@ -65,3 +65,38 @@ body {
         margin-left: 35px;
     }
 }
+
+/* styling the sign up form */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.signupform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signupform input {
+    margin-bottom: 10px;
+    padding: 2.5%;
+    margin-top: 5px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+.label {
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.signupform .btn {
+    margin-top: 3%;
+    font-size: 1em;
+    padding: 13px 0;
+}

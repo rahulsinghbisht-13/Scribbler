@@ -95,8 +95,13 @@
     <!-- created buttons for posts -->
     <main id="main">
         <div class="postButtons">
-            <button type="button" class="btn btn-warning" id="all_posts"><a href="./html/bloglist.html" id="linkToBloglist">All Posts</a></button>
-            <button type="button" class="btn btn-warning" id="create_post" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Create Post</button>
+            <!-- center align post buttons -->
+            <div class="row">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-warning" id="all_posts"><a href="./html/bloglist.html" id="linkToBloglist">All Posts</a></button>
+                    <button type="button" class="btn btn-warning" id="create_post" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Create Post</button>
+                </div>
+            </div>
             
             <!-- modal for create post button -->
             <div class="modal fade" id="staticBackdrop2"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">

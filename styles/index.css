@@ -38,16 +38,7 @@ body {
 }
 
 #staticBackdropLabel {
-    padding-left: 35%;
     font-size: 2em;
-}
-
-/* media query for signup title */
-@media(max-width: 500px){
-    #staticBackdropLabel {
-        padding-left: 30%;
-        padding-right: 10%;
-    }
 }
 
 /* media query for signup/signin button */
@@ -57,13 +48,6 @@ body {
         flex-direction: row;
         justify-content: flex-end;
         margin-left: 40px;
-    }
-}
-
-/* media query for post buttons */
-@media(max-width: 300px){
-    #all_posts{
-        margin-left: 35px;
     }
 }
 
@@ -133,16 +117,7 @@ body {
 }
 
 #staticBackdropLabel1 {
-    padding-left: 27%;
     font-size: 2em;
-}
-
-/* media query for signin title */
-@media(max-width: 500px){
-    #staticBackdropLabel1 {
-        padding-left: 30%;
-        padding-right: 10%;
-    }
 }
 
 /* styling the footer of signin modal */
@@ -157,10 +132,6 @@ body {
 #openSignupModalSpan {
     color: blue;
     cursor: pointer;
-}
-
-.modal-header {
-    align-items: center;
 }
 
 /* styling the all post button after linking it to bloglist.html */

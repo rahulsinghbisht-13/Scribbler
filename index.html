@@ -96,7 +96,33 @@
     <main id="main">
         <div class="postButtons">
             <button type="button" class="btn btn-warning" id="all_posts"><a href="./html/bloglist.html" id="linkToBloglist">All Posts</a></button>
-            <button type="button" class="btn btn-warning" id="create_post">Create Post</button>
+            <button type="button" class="btn btn-warning" id="create_post" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Create Post</button>
+            
+            <!-- modal for create post button -->
+            <div class="modal fade" id="staticBackdrop2"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel2">Pen Your Post</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form class="createPostForm" action="#kncs">
+                                    
+                                    <label for="createTitle" class="label">Title:</label>
+                                    <input type="text" name="createTitle" id="createTitle">
+                        
+                                    <label for="createContent" class="label">Content:</label>
+                                    <input type="text" name="createContent" id="createContent">
+                                    
+                                </form>
+                                <button class="btn btn-success" id="createButton">Create</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 

@@ -162,3 +162,10 @@ body {
 .modal-header {
     align-items: center;
 }
+
+/* styling the all post button after linking it to bloglist.html */
+
+#linkToBloglist {
+    text-decoration: none;
+    color: black;
+}

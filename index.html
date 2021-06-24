@@ -100,10 +100,10 @@
             
             <!-- modal for create post button -->
             <div class="modal fade" id="staticBackdrop2"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel2">Pen Your Post</h5>
+                            <h5 class="modal-title w-100 text-center" id="staticBackdropLabel2">Pen Your Post</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -114,10 +114,14 @@
                                     <input type="text" name="createTitle" id="createTitle">
                         
                                     <label for="createContent" class="label">Content:</label>
-                                    <input type="text" name="createContent" id="createContent">
+                                    <textarea name="createContent" id="createContent" class="form-control"></textarea>
                                     
                                 </form>
-                                <button class="btn btn-success" id="createButton" onclick="createdpost()" data-bs-dismiss="modal">Create</button>
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" id="createButton" onclick="createdpost()" data-bs-dismiss="modal">Create</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

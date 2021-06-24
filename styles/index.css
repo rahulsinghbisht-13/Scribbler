@@ -137,7 +137,7 @@ body {
     font-size: 2em;
 }
 
-/* media query for signup title */
+/* media query for signin title */
 @media(max-width: 500px){
     #staticBackdropLabel1 {
         padding-left: 30%;
@@ -168,4 +168,50 @@ body {
 #linkToBloglist {
     text-decoration: none;
     color: black;
+}
+
+/* styling the create post modal */
+
+#staticBackdropLabel2 {
+    font-size: 2em;
+}
+
+.createPostForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.createPostForm .label {
+    margin-top: 1%;
+}
+
+.createPostForm input, #createContent {
+    margin-bottom: 10px;
+    padding: 1.5%;
+    margin-top: 5px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+#createButton {
+    margin-top: 2%;
+    font-size: 1em;
+    padding: 13px 0;
+    width: 160px;
+    height: 50px;
+}
+
+#staticBackdrop2 .modal-dialog {
+    height: 90vh;
+}
+
+#createTitle {
+    padding: 1%;
+    width: 50%;
+}
+
+#createContent {
+    height: 250px;
+    padding: 1.5%;
 }

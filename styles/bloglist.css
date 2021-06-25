@@ -1,0 +1,124 @@
+/* gave the background an image and defined its attributes */
+body {
+    background-color: orange;
+    height: 95vh;
+}
+
+/* defined flexbox in header container */
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    height: 20vh;
+}
+
+#logo, #tagline{
+    font-family: Satisfy, cursive;
+}
+
+#logo {
+    color: blue;
+    font-size: 3em;
+}
+
+#tagline {
+    color: white;
+}
+
+#staticBackdropLabel {
+    font-size: 2em;
+}
+
+/* media query for signup/signin button */
+@media(max-width: 380px){
+    #signup, #signin {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: 40px;
+    }
+}
+
+/* styling the sign up form */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.signupform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signupform input {
+    margin-bottom: 10px;
+    padding: 2.5%;
+    margin-top: 5px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+.label {
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.signupform .btn {
+    margin-top: 3%;
+    font-size: 1em;
+    padding: 13px 0;
+}
+
+/* styling the sign in form */
+
+.modal-dialog {
+    display: flex;
+    height: 90vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.signinform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signinform input {
+    margin-bottom: 10px;
+    padding: 2.5%;
+    margin-top: 5px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+.signinform .btn {
+    margin-top: 4.5%;
+    font-size: 1em;
+    padding: 13px 0;
+}
+
+#staticBackdropLabel1 {
+    font-size: 2em;
+}
+
+/* styling the footer of signin modal */
+
+#openSignupModal {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 7%;
+}
+
+#openSignupModalSpan {
+    color: blue;
+    cursor: pointer;
+}

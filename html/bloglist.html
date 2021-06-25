@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- linked google fonts "Satisfy" -->
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <!-- linked header.html with header.css -->
+    <link rel="stylesheet" href="../styles/header.css">
+    
+    <title>Header.html</title>
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo_tagline">
+            <h2 id="logo">ScriBBler</h2>
+            <p id="tagline">Explore. Imagine. Create</p>
+        </div>
+        <div class="buttons">
+            <!-- Sign In button -->
+            <button type="button" class="btn btn-primary" id="signin" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Sign In</button>
+
+            <!-- Modal  added to signup button -->
+            <div class="modal fade" id="staticBackdrop1"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title  w-100 text-center" id="staticBackdropLabel1">Welcome Back!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form class="signinform" action="#kncs">
+                                    
+                                    <label for="username" class="label">Username</label>
+                                    <input type="text" name="username" id="username" placeholder="Enter Username" required>
+                        
+                                    <label for="password" class="label">Password</label>
+                                    <input type="password" name="password" id="password" placeholder="Enter Password" required>
+    
+                                    <button class="btn btn-success">Sign In</button>
+
+                                    <!-- snippet to open another modal -->
+                                    <p id="openSignupModal"> Not a member? <span id="openSignupModalSpan" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-dismiss="modal">Sign Up</span></p>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sign Up button -->
+            <button type="button" class="btn btn-primary" id="signup" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign Up</button>
+            
+            <!-- Modal  added to signup button -->
+            <div class="modal fade" id="staticBackdrop"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title  w-100 text-center" id="staticBackdropLabel">Get Started</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form class="signupform" action="#kncs">
+                                    <label for="fullname" class="label">Full Name</label>
+                                    <input type="text" name="fullname" id="fullname" placeholder="Enter Full Name" required>
+                        
+                                    <label for="username" class="label">Username</label>
+                                    <input type="text" name="username" id="username" placeholder="Enter Username" required>
+                        
+                                    <label for="password" class="label">Password</label>
+                                    <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                        
+                                    <label for="cfmpassword" class="label">Confirm Password</label>
+                                    <input type="password" name="cfmpassword" id="cfmpassword" placeholder="Confirm Password" required>
+
+                                    <button class="btn btn-success">Sign Up</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -9,7 +9,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin: 10px;
-    height: 20vh;
+    height: 15vh;
 }
 
 #logo, #tagline{
@@ -116,4 +116,111 @@ body {
 #openSignupModalSpan {
     color: blue;
     cursor: pointer;
+}
+
+/* styling the blog post layout */
+
+#edtPstBtn {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.postLike {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#afterLike {
+    font-size: 12px;
+    font-family: 'Abel', sans-serif;
+    padding-left: 5px
+}
+
+#counterLikedBy {
+    font-size: 10px;
+    font-family: 'Abel', sans-serif;
+    padding-left: 5px
+}
+
+#defaultText {
+    font-family: 'Abel', sans-serif;
+    padding-left: 5px
+}
+
+#txtCommentCommentPost {
+    height: 150px;
+    width: 700px;
+}
+
+.blogTite {
+    font-size: 200%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.blogText {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 5px;
+}
+
+.blogAuthor {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px 0px 10px;
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+    justify-content: space-between;
+}
+
+.blogPostMainLayout{
+    display: flex;
+    flex-direction: row;
+    display:table;
+    padding-left: 6%;
+}
+
+.postAuthor{
+    display:table-cell;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.postEdit{
+    color:white;
+    background-color: #e60073;
+    box-shadow: 0px 5px  12px -4px #e60073;
+    font-family: 'Abel', sans-serif;
+    margin: 10px;
+    cursor: pointer;
+    font-family: Abel;
+    padding: 5px 10px;
+    font-size: 14px;
+    display:table-cell;
+    text-align: center;
+    width:70px;
+}
+
+.postLike{
+    color:white;
+    background-color: #e60073;
+    box-shadow: 0px 5px  12px -4px #e60073;
+    font-family: 'Abel', sans-serif;
+    margin: 10px;
+    cursor: pointer;
+    font-family: Abel;
+    padding: 5px 18px;
+    font-size: 14px;
+    display:table-cell;
+    text-align: right;
+}
+
+.commentPost {
+    padding-left: 5px;
+    outline: none;
+    font-family: Abel;
+}
+
+#editPost, .blogText {
+    padding-right: 6%;
 }

@@ -10,7 +10,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin: 10px;
-    height: 20vh;
+    height: 15vh;
 }
 
 #logo, #tagline{
@@ -121,4 +121,95 @@ body {
 #openSignupModalSpan {
     color: blue;
     cursor: pointer;
+}
+
+/* styling the blog post cards */
+
+.post {
+    position: relative;
+    width: 45%;
+    background: #fff;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin: 10px;
+    border-radius: 15px;
+}
+    
+.post-left {
+    width: 18%;            
+    max-width: 18%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+}
+
+.post-content {
+    font-family: 'Times New Roman', Times, serif;
+    width: 90%;           
+    display: table-cell;
+    text-align: left;
+    background-color: #E8E8E8;
+    color: #000000;
+    border-radius: 0 15px 15px 0;
+    padding: 0 20px;
+}
+
+.post-title{
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    color: #2b312b;
+    font-size: 25px;
+    height: 30px;
+    overflow: hidden;
+    margin: 4% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.post-more {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+}
+
+.post-desc{
+    height: 70px;
+    margin-bottom: 0 !important;
+    overflow: hidden;
+}
+
+.allPostsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post-trash {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#deletemodal .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#dlt_yes, #dlt_no {
+    width: 30%;
 }

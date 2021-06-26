@@ -69,7 +69,7 @@ function addComment(){
   var x = document.getElementById("txtCommentCommentPost").value;
   
   console.log(x);
-  var pElement = '<p style="background-color:white; width: 600px; height: 60px; padding-left: 10px; padding-top: 15px; margin: 20px 15px;">'+ x + '</p>';
+  var pElement = '<textarea style="background-color:white; width: 600px; height: 60px; padding-left: 10px; padding-top: 15px; margin: 20px 15px; overflow: hidden; border:none;">'+ x + '</textarea>';
   var getDiv = document.getElementById('listAllComments');
   getDiv.innerHTML = pElement + getDiv.innerHTML;
 }

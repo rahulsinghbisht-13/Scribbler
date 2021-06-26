@@ -137,14 +137,15 @@ body {
 }
 
 #counterLikedBy {
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'Abel', sans-serif;
     padding-left: 5px
 }
 
 #defaultText {
+    font-size: 12px;
     font-family: 'Abel', sans-serif;
-    padding-left: 5px
+    padding-left: 10px
 }
 
 #txtCommentCommentPost {
@@ -223,4 +224,15 @@ body {
 
 #editPost, .blogText {
     padding-right: 6%;
+}
+
+.txtBlog{
+    display:table-cell;
+    overflow: scroll;
+}
+
+#listAllComments {
+    background-color: rgb(216, 210, 210);
+    width: 650px;
+    padding: 8px;
 }

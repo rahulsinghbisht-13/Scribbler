@@ -10,6 +10,9 @@
     <!-- linked google fonts "Satisfy" -->
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
+    <!-- link to access font awesome icons -->
+    <script src="https://kit.fontawesome.com/a6e2755b4d.js" crossorigin="anonymous"></script>
+
     <!-- linked header.html with header.css -->
     <link rel="stylesheet" href="../styles/post.css">
     
@@ -95,10 +98,11 @@
     <!-- defining the structure of blog post -->
     <div class="blogPostMainLayout">
 
-
+        <!-- blog title -->
         <div class="blogContent">
-            <div id="blogTitle" class="blogTite">
+            <div id="blogTitle" class="blogTitle">
                 <h id="blogTitleNew">The legacy of Jimi Hendrix</h>
+                <center><textarea id="titleArea" style="display: none; width: 247px;font-size: 16.5px;"></textarea></center>
             </div>
         </div>
         <div class="blogAuthor">
@@ -106,13 +110,13 @@
             <!-- Code for Edit/Save button and toggle function  -->
             <p class="postAuthor">Jimi</p>
             <div id="editPost" onclick="toggleEditSave()">
-                <button class="postEdit btn btn-danger" id ="edtPstBtn">Edit
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                <button class="postEdit btn btn-danger" id ="edtPstBtn"><span id="text">Edit</span><span id="text2"></span> <i class="fa fa-pencil-square-o" aria-hidden="true" id="edit1"></i>
                 </button>                    
             </div>
             
         </div>
 
+        <!-- blog content text -->
         <div class="blogText" id="blogBodyId">
             <p id="blogBody">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in sint facere perferendis laudantium, omnis, voluptas accusantium necessitatibus voluptate rerum eveniet assumenda deserunt quas illum obcaecati beatae laboriosam aliquid. Sapiente.
@@ -131,28 +135,33 @@
                 Necessitatibus cupiditate veniam quisquam ea molestiae nisi voluptates aut, similique laborum deleniti illo incidunt. Voluptatum, vero ratione animi deserunt, saepe quo officia, reiciendis impedit deleniti excepturi repellat quidem rem temporibus?
                 Dolore ex deserunt sapiente odio repellendus dicta laudantium eius velit voluptate, nisi quisquam modi minima voluptates. Modi voluptas illum odit a iste iure magnam vero corporis pariatur, est enim ullam.
             </p>
+            <textarea id="textarea" style="display: none"></textarea>
         </div>
+        <!-- code for like -->
         <div id="likeButton">
-            <button class="postLike btn btn-danger" onclick="incrementCounter()">Like
+            <button class="postLike btn btn-danger"  id="edit" onclick="incrementCounter()"><span id="text"></span><span id="text2" class="likeText">Like</span>
                 <i class="fa fa-thumbs-up" aria-hidden="true"></i>
             </button>
-            <p id="afterLike">
-                <span id="counterLikedBy">0</span> people have liked this!
-                <div><span id="defaultText">Be the first one to like this!</span></div>
+            <p id="afterLike" style="margin: 0; margin-bottom: 20px;">
+                <span id="defaultText" style="margin: 0;">Be the first one to like this!</span>
             </p>
         </div>
 
-
+        <!-- code for comments -->
         <div class="commentPost form-floating">
             <textarea id="txtCommentCommentPost" class="commentPost form-control" placeholder="Leave a comment"></textarea>
-            <label for="txtCommentCommentPost">Leave a comment...</label>
+            <label for="txtCommentCommentPost" style="padding-left: 20px;">Leave a comment...</label>
         </div>
         <button class="postLike btn btn-danger" onclick="addComment()">Comment</button>
         <div class="commentSection">
-            <h3>All Comments</h3>
+            <h3 style="margin-top: 20px;">All Comments</h3>
             <div class="allComments" id="listAllComments">                
             </div>
         </div>
+
+        <!-- save and edit icons -->
+        <p id="temp" style="display: none;"><i class="fas fa-save"></i></p>
+		<p id="temp2" style="display: none;"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i></p>
 
     </div>
     
@@ -160,9 +169,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-
-    <!-- link to access font awesome icons -->
-    <script src="https://kit.fontawesome.com/a6e2755b4d.js" crossorigin="anonymous"></script>
 
     <!-- linked to post.js -->
     <script src="../scripts/post.js"></script>

@@ -149,11 +149,11 @@ body {
 }
 
 #txtCommentCommentPost {
-    height: 150px;
-    width: 700px;
+    height: 200px;
+    width: 70%;
 }
 
-.blogTite {
+.blogTitle {
     font-size: 200%;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
@@ -166,18 +166,14 @@ body {
 }
 
 .blogAuthor {
-    display: flex;
-    flex-direction: row;
     padding: 0px 0px 0px 10px;
     font-family: 'Niconne', cursive;
     font-size: 30px;
+    display: flex;
     justify-content: space-between;
 }
 
 .blogPostMainLayout{
-    display: flex;
-    flex-direction: row;
-    display:table;
     padding-left: 6%;
 }
 
@@ -232,7 +228,7 @@ body {
 }
 
 #listAllComments {
-    background-color: rgb(216, 210, 210);
-    width: 650px;
+    background-color: rgb(231, 231, 231);
+    width: 70%;
     padding: 8px;
 }

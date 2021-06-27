@@ -1,75 +1,68 @@
+var flag = 0;
+var like = 0;
+
+// code for incrementing like count
 function incrementCounter(){
-  var cntr = document.getElementById('counterLikedBy');
-  var val = parseInt(cntr.innerText);
-  cntr.innerText = val+1;
-  document.getElementById('defaultText').style.display = 'none';
+  like++;
+  document.getElementsByClassName("likeText")[0].innerHTML = "Liked!";
+  if(like == 1)
+  {
+    document.getElementById("afterLike").innerHTML = "1 person likes this!";
+  }
+  else if(like > 1)
+  {
+    document.getElementById("afterLike").innerHTML = like + " people liked this!";
+  }
 }
 
+// code to toggle edit/save button to edit the blog content and save it
 function toggleEditSave(){
-  var toggleSave = '<button class="postEdit btn btn-danger">Save '+
-  '<i style="font-size: 14px;font-weight: bolder;" '+
-  'class="fa fa-save" aria-hidden="true"></i>'+
-  '</button>';
-  var toggleEdit = '<button class="postEdit btn btn-danger">Edit '+
-  '<i style="font-size: 14px;font-weight: bolder;" '+
-  'class="fa fa-pencil-square-o" aria-hidden="true"></i>'+
-  '</button>';
+  if(flag==0)
+  {
+    var a=document.getElementById("blogBody").innerHTML;
+    var x=document.getElementById("temp").innerHTML;
+    document.getElementById("text").innerHTML='Save ';
+    document.getElementById("edit1").style.display = "none";
+    document.getElementById("text2").innerHTML=x;
+    document.getElementById("textarea").value=a;
+    document.getElementById("blogBody").style.display="none";
+    document.getElementById("blogBody").style.textAlign="left";
+    document.getElementById("textarea").style.display="block";
+    document.getElementById("textarea").style.width="95%";
+    document.getElementById("textarea").style.height="500px";
 
-  var edtSaveBtn = document.getElementById('editPost');
-  var toDo = (edtSaveBtn.innerText).toString().trim();
-  console.log(toDo);
-  console.log(toDo.localeCompare('Edit'));
-  if(toDo.localeCompare('Edit')===0){
-    console.log("Currently Edit");
-    var bSave = document.getElementById('editPost');
-    bSave.innerHTML = toggleSave;
-    enableEditableText();
-
+    var title=document.getElementById("blogTitleNew").innerHTML;
+		document.getElementById("titleArea").value=title;
+		document.getElementById("blogTitleNew").style.display="none";
+    document.getElementById("titleArea").style.display="block";
+    flag=1;
   }
   else{
-    console.log("Currently Save");
-    var bEdit = document.getElementById('editPost');
-    bEdit.innerHTML = toggleEdit;
-    updateEditedBlog();
+    var c = document.getElementById("textarea").value;
+    document.getElementById("blogBody").innerHTML=c;
+    document.getElementById("blogBody").style.display="block";
+    document.getElementById("textarea").style.display="none";
+    var d=document.getElementById("titleArea").value;
+    document.getElementById("blogTitleNew").innerHTML=d;
+    document.getElementById("blogTitleNew").style.display="block";
+    document.getElementById("titleArea").style.display="none";
+    var d=document.getElementById("temp2").innerHTML;
+    document.getElementById("text").innerHTML='Edit';
+    document.getElementById("text2").innerHTML=d;
+    flag=0;
   }
-
 }
 
-function enableEditableText(){
-  var getBlogContentEle = document.getElementById('blogBody');
-  var getBlogContent = getBlogContentEle.innerText;
-
-  //Div element
-  var getDiv = document.getElementById('blogBodyId');
-  //Create a input element
-  var inputElement = '<textarea class="txtBlog" id="txtEditedBlog" style="width:1100px; height:600px">'+
-  getBlogContent+
-  '</textarea>'
-  //Update the Div element
-  getDiv.innerHTML = inputElement;
-}
-function updateEditedBlog(){
-  var editedBlog = document.getElementById('txtEditedBlog');
-
-  var textEdited = (editedBlog.innerHTML).toString();
-  
-  var pElement = '<p id="blogBody">'+
-  textEdited+
-  '</p>';
-  var getDiv = document.getElementById('blogBodyId');
-  getDiv.innerHTML=pElement;
-
-}
+// code for adding comments
 function addComment(){
-  console.log("Inside add comment");
+  
   var x = document.getElementById("txtCommentCommentPost").addEventListener("onchange", function(){
     document.getElementById("txtCommentCommentPost").innerHTML;
   });
 
   var x = document.getElementById("txtCommentCommentPost").value;
   
-  console.log(x);
-  var pElement = '<textarea style="background-color:white; width: 600px; height: 60px; padding-left: 10px; padding-top: 15px; margin: 20px 15px; overflow: hidden; border:none;">'+ x + '</textarea>';
+  var pElement = '<p style="background-color:white; height: 60px; padding-left: 10px; padding-top: 15px; margin: 10px 15px; overflow: hidden; border:none;">'+ x + '</p>';
   var getDiv = document.getElementById('listAllComments');
   getDiv.innerHTML = pElement + getDiv.innerHTML;
 }
